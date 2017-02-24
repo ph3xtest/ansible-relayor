@@ -117,7 +117,7 @@ All variables mentioned here are optional.
 * `tor_alpha` boolean
     - Set to True if you want to enable the Tor alpha version repository.
     - Note: This setting does not ensure an installed tor is upgraded to the alpha release.
-    - This setting is supported on Debian/Ubuntu only (ignored on other platforms).
+    - This setting is supported on Debian/Ubuntu/FreeBSD only (ignored on other platforms).
     - default: False
 
 * `tor_ExitRelay` boolean

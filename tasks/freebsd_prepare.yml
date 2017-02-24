@@ -35,3 +35,8 @@
     reload: no
     sysctl_set: yes
   when: tor_currentnmbc.stdout|int < {{ tor_freebsd_nmbclusters }}
+
+- name: Select devel package if tor_alpha is enabled (FreeBSD)
+  set_fact:
+    tor_packages: tor-devel
+  when: tor_alpha == True
